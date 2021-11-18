@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>덧셈 계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>덧셈 계산기 사이트</h1>
+    <input type="text" id="n1">
+    +
+    <input type="text" id="n2">
+    =
+    <input type="text" id="res">
+
+    <input type="button" value="계산 시작" onclick="cal()">
+
+</body>
+
+<script>
+
+    function cal(){
+        var n1 = Number(document.getElementById("n1").value);
+        var n2 = Number(document.getElementById("n2").value);
+
+        var res;
+
+        res = n1 + n2;
+
+        document.getElementById("res").value = res;
+    }
+
+</script>
+
+</html>
